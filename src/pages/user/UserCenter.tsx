@@ -17,22 +17,6 @@ import {Text, View} from 'react-native';
 //     </View>
 //   );
 // };
-{
-    /* <Stack.Navigator initialRouteName="Home">
-    <Stack.Screen
-      name="Home"
-      component={Home}
-      options={{
-        headerShown: false,
-      }}
-    />
-    <Stack.Screen
-      name="Details"
-      component={DetailsScreen}
-      options={{title: '详情'}}
-    />
-  </Stack.Navigator>; */
-  }
 // const Tab = createBottomTabNavigator();
 const UserCenter = () => {
   return (

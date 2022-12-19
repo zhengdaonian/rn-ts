@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, Text, ToastAndroid, TouchableOpacity, View} from 'react-native';
+import {Text, ToastAndroid, TouchableOpacity, View} from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import SwiperCom from './components/swiper/swiper';
 
 const handlePress = (path: string) => {
@@ -11,28 +12,34 @@ let itemList = [
   [
     {
       title: '创建课程',
+      icon: 'create-outline',
       path: 'AddCourse',
     },
     {
       title: '创建试卷',
+      icon: 'document-outline',
       path: 'AddExam',
     },
     {
       title: '成绩统计',
+      icon: 'analytics-outline',
       path: 'Analysis',
     },
   ],
   [
     {
       title: '视听空间',
+      icon: 'videocam-outline',
       path: 'VideoList',
     },
     {
       title: '我的实验',
+      icon: 'eye-outline',
       path: 'experiment',
     },
     {
       title: '建议反馈',
+      icon: 'chatbox-ellipses-outline',
       path: 'suggestedFeedback',
     },
   ],
@@ -50,8 +57,7 @@ const listItems = itemList.map((itemArray, i) => {
               handlePress(item.path);
             }}>
             <View key={item.title}>
-              {/* <Image style={style.opImg} source={item.image} /> */}
-              {/* style={style.opText} */}
+              <Ionicons name={item.icon} size={60} />
               <Text>{item.title}</Text>
             </View>
           </TouchableOpacity>

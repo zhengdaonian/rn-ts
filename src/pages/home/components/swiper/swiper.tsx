@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import {
-  ScrollView,
-  StyleSheet,
-  Dimensions,
-  Image,
-} from 'react-native';
+import {ScrollView, StyleSheet, Dimensions, Image} from 'react-native';
 //引用插件
 import Swiper from 'react-native-swiper';
 const {width, height} = Dimensions.get('window');
